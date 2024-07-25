@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CRUD SYSTEM</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://kit.fontawesome.com/0c6829628d.js" crossorigin="anonymous"></script>
+  </head>
+
+
+
+
+  <body>
+<section>
+  <div class="container  mt-5 bg-gradient w-75 pt-5 pb-5 shadow-lg">
+    <h1 class="text-center">CRUD SYSTEM</h1>
+    <div>
+      <div class="mb-3 container px-5">
+        <label for="exampleFormControlInput1" class="form-label">Product Name:</label>
+        <input type="text" class="form-control" id="ProductName">
+      </div>
+      <div class="mb-3 container px-5">
+        <label for="exampleFormControlInput1" class="form-label">Product Category:</label>
+        <input type="text" class="form-control" id="ProductCategory">
+      </div>
+      <div class="mb-3 container px-5">
+        <label for="exampleFormControlInput1" class="form-label">Product Price:</label>
+        <input type="text" class="form-control" id="ProductPrice">
+      </div>
+      <div class="mb-3 container px-5">
+        <label for="exampleFormControlInput1" class="form-label">Product Description:</label>
+        <textarea class="form-control" id="ProductDescription" rows="3"></textarea>
+        
+      </div>
+<div class="mb-3 container px-5">
+  <button type="button" class="btn btn-primary"  id="add">Add Product</button>
+  <button type="button" class="btn btn-danger" onclick="Reset()">Reset</button>    
+</div>
+    </div>
+
+
+  </div>
+
+
+
+
+
+<div class="w-75 m-auto my-5">
+  <table class="table">
+      <thead>
+          
+              <tr><th>Index</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Description</th>
+              <th>Update</th>
+              <th>Delete</th>
+       
+      </tr>
+    </thead>
+      <tbody id="body">
+       
+     
+      </tbody>
+  </table>
+</div>
+</section>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+  </body>
+</html>
